@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Profile - Ali Alsbayyil</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      font-family: system-ui, sans-serif;
+      overflow-x: hidden;
+      background-color: #e6e3db;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .header-banner {
+      display: block;
+      width: 100vw;
+      height: 250px;
+      object-fit: cover;
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .container {
+      background: white;
+      padding: 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 900px;
+      width: 100%;
+      margin-top: 1rem;
+      border: 1px solid black;
+      font-size: 1.3rem;
+      line-height: 1.8;
+    }
+
+    .profile-pic {
+      width: 400px;
+      height: 400px;
+      object-fit: contain;
+      border-radius: 10%;
+      margin-bottom: 1rem;
+      margin-top: 0rem;
+      background-color: white;
+    }
+
+    .btn {
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      border: none;
+      display: inline-block;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-back {
+      background-color: #111827;
+      color: white;
+      margin-top: 1rem;
+    }
+
+    .btn-back:hover {
+      background-color: #111827;
+    }
+
+    .btn-download {
+      background-color: #111827;
+      color: white;
+      margin-top: 1rem;
+    }
+
+    .btn-download:hover {
+      background-color: #1f2937;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .icons {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+    }
+
+    .icons a {
+      text-decoration: none;
+      color: #0369a1;
+      margin: 0 0.5rem;
+    }
+
+    .icons a:hover {
+      color: #0284c7;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        padding: 1rem;
+      }
+
+      .container {
+        padding: 1.5rem;
+      }
+
+      .header-banner {
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header-banner {
+        height: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="/SAUDIARABIA.jpg" alt="Saudi Banner" class="header-banner"/>
+
+  <main class="main-content">
+    <a href="/" class="btn btn-back">Back to Home Page</a>
+
+    <div class="container">
+      <img src="/profile.jpg" alt="Ali Alsbayyil" class="profile-pic" />
+
+      <h2>Eng. Ali Alsbayyil</h2>
+      <p><strong>Frontend #Flutter #React #Java #Frontend #Agile #Saudi2030</strong></p>
+      <p><strong>Software Engineer at Showinmin – InspireU STC</strong></p>
+      <p>Riyadh, Kingdom of Saudi Arabia</p>
+
+      <p>
+       Full-Stack Developer with experience in developing web and mobile applications using Flutter, React, HTML, CSS, and JavaScript. Currently working at Daqeqa Platform (part of inspireU by STC), contributing to ongoing frontend and backend projects. Developed solutions such as PulseGuard, focused on health monitoring, and Eqraa, aimed at improving the digital reading experience. Committed to creating impactful technologies that align with the goals of Saudi Vision 2030..
+      </p>
+
+      <div class="icons">
+        📧 <a href="mailto:AliAlsbayyil@outlook.com">AliAlsbayyil@outlook.com</a><br>
+        🔗 <a href="https://www.linkedin.com/in/ali-alsbayyil/" target="_blank">LinkedIn</a>
+      </div>
+
+      <iframe src="/ali-cv-updated.pdf" title="Ali Alsbayyil CV"></iframe>
+
+      <a class="btn btn-download" href="/ali-cv-updated.pdf" download>Download CV</a>
+    </div>
+  </main>
+
+</body>
+</html>

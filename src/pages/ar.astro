@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>ملفي الشخصي - علي السبيّل</title>
+  <style>
+
+  html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  overflow-x: hidden;
+  background-color: #e6e3db;
+}
+
+    * {
+      box-sizing: border-box;
+    }
+
+   body {
+  font-family: system-ui, sans-serif;
+  overflow-x: hidden;
+  background-color: #e6e3db;
+}
+
+
+   .header-banner {
+  display: block;
+  width: 100vw;              
+  height: 250px;             
+  object-fit: cover;        
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+
+
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .container {
+  background: white;
+  padding: 3rem; /* more internal spacing */
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+  margin-top: 1rem;
+  border: 1px solid black;
+  font-size: 1.3rem; /* make everything inside bigger */
+  line-height: 1.8;  /* increase line spacing for better readability */
+}
+
+
+
+    .profile-pic {
+  width: 400px;
+  height: 400px;
+  object-fit: contain; 
+  border-radius: 10%;
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+  background-color: white; /* Optional to fill background if image is not square */
+}
+
+
+
+    .btn {
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      border: none;
+      display: inline-block;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-back {
+      background-color: #111827;
+      color: white;
+      margin-top: 1rem;
+    }
+
+    .btn-back:hover {
+      background-color: #111827;
+    }
+
+    .btn-download {
+      background-color: #111827;
+      color: white;
+      margin-top: 1rem;
+    }
+
+    .btn-download:hover {
+      background-color: #1f2937;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .icons {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+    }
+
+    .icons a {
+      text-decoration: none;
+      color: #0369a1;
+      margin: 0 0.5rem;
+    }
+
+    .icons a:hover {
+      color: #0284c7;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        padding: 1rem;
+      }
+
+      .container {
+        padding: 1.5rem;
+      }
+
+      .header-banner {
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header-banner {
+        height: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+  <img src="/SAUDIARABIA.jpg" alt="Saudi Banner" class="header-banner"/>
+
+
+  <main class="main-content">
+    <a href="/" class="btn btn-back">الرجوع إلى الصفحة الرئيسية</a>
+
+    <div class="container">
+      <img src="/profile.jpg" alt="Ali Alsbayyil" class="profile-pic" />
+
+      <h2>م. علي بن سعود السبيّل</h2>
+      <p><strong>Frontend #Flutter #React #Java #Frontend #Agile #Saudi2030</strong></p>
+      <p><strong>مهندس برمجيات في ShowInMin - InspireU STC</strong></p>
+      <p>الرياض، المملكة العربية السعودية</p>
+
+      <p>
+        ممهندس برمجيات يعمل كمطور Full-Stack، يمتلك خبرة في تطوير تطبيقات الويب والجوال باستخدام Flutter وReact وHTML وCSS وJavaScript. يعمل حالياً في منصة دقيقة (ضمن برنامج inspireU التابع لشركة STC)، ويساهم في تنفيذ مشاريع مستمرة تشمل الواجهات الأمامية والخلفية. شارك في تطوير حلول مثل PulseGuard لمتابعة المؤشرات الصحية وEqraa لتعزيز تجربة القراءة الرقمية. ملتزم ببناء تقنيات ذات أثر حقيقي تتماشى مع أهداف رؤية السعودية 2030
+      </p>
+
+      <div class="icons">
+        📧 <a href="mailto:AliAlsbayyil@outlook.com">AliAlsbayyil@outlook.com</a><br>
+        🔗 <a href="https://www.linkedin.com/in/ali-alsbayyil/" target="_blank">LinkedIn</a>
+      </div>
+
+      <iframe src="/ali-cv-updated.pdf?v=20250806" title="Ali Alsbayyil CV"></iframe>
+        <a class="btn btn-download" href="/ali-cv-updated.pdf?v=20250806" download>Download CV</a>
+
+    </div>
+  </main>
+
+</body>
+</html>
